@@ -180,7 +180,7 @@ CLASSIFIERS = [
 
 MAJOR = 1
 MINOR = 4
-MICRO = 2
+MICRO = 3
 ISRELEASED = True
 VERSION = '%d.%d.%d' % (MAJOR, MINOR, MICRO)
 
@@ -270,11 +270,11 @@ def setup_package():
     try:
         import numpy
     except:
-        build_requires = ['numpy>=1.6',]
+        build_requires = ['numpy>=2.0',]
         
     # Common setup args
     setup_args = dict(
-        name = 'pyNFFT',
+        name = 'pyNFFT2',
         version = FULLVERSION,
         author = 'Ghislain Vaillant',
         author_email = 'ghisvail@gmail.com',
